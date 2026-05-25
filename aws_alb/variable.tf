@@ -10,3 +10,8 @@ variable "subnet_id" {
 variable "vpc_id" {
   type = string
 }
+
+variable "instance" {
+  description = "instance id for attachment group"
+  type = list(string)
+}

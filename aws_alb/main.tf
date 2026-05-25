@@ -41,7 +41,8 @@ resource "aws_lb_target_group" "tg" {
 
 # Target Group Attachment
 resource "aws_lb_target_group_attachment" "ec2_attach" {
+  count = length(var.instance)
   target_group_arn = aws_lb_target_group.tg.arn
-  target_id        = aws_instance.nginx_server.id
+  target_id        = var.instance[count.index]
   port              = 80
 }
