@@ -20,7 +20,7 @@ variable "aws-sg-name" {
 
 variable "instance_type" {
   type = string
-  default = "t3.micro"
+  default = "t2.micro"
 }
 
 variable "name" {
