@@ -6,5 +6,4 @@ variable "aws-subnet-cidr" {
 variable "aws-subnet-name" {
     description = "aws subnet name"
     type = list(string)
-    default = [ "tf-public-subnet-1", "tf-public-subnet-2" ]
 }

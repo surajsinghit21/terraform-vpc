@@ -16,7 +16,6 @@ variable "sg_id" {
 
 variable "name" {
   type = list(string)
-  default = [ "tf-webserver-1", "tf-webserver-2" ]
 }
 
 variable "environment" {
