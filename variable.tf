@@ -1,5 +1,5 @@
 variable "subnet-cidr" {
- default  = ["10.0.1.0/24", "10.0.1.0/24"] 
+ default  = ["9.0.1.0/24", "9.0.2.0/24"] 
 }
 
 variable "aws-subnet-name" {
