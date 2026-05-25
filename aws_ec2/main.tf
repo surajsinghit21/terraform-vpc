@@ -8,7 +8,7 @@ resource "aws_instance" "ec2_instance" {
   vpc_security_group_ids      = [var.sg_id]
   associate_public_ip_address = true
   availability_zone = data.aws_availability_zones.availability_zones.names[count.index]
-  #user_data = file("${path.module}/userdata.sh")
+  user_data = file("${path.module}/userdata.sh")
 
   tags = {
     Name        = var.name[count.index]
